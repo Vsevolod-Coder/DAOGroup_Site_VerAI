@@ -17,12 +17,12 @@ const LoadingSpinner = () => {
         </div>
 
         {/* Spinner */}
-        <div className="relative">
+        <div className="relative w-16 h-16 mx-auto">
           {/* Outer Ring */}
-          <div className="w-16 h-16 mx-auto border-4 border-slate-200 border-t-blue-500 rounded-full animate-spin"></div>
+          <div className="absolute inset-0 border-4 border-slate-200 border-t-blue-500 rounded-full animate-spin"></div>
           
           {/* Inner Ring */}
-          <div className="absolute top-2 left-1/2 transform -translate-x-1/2 w-12 h-12 border-4 border-transparent border-t-purple-500 rounded-full animate-spin" style={{animationDirection: 'reverse', animationDuration: '0.8s'}}></div>
+          <div className="absolute top-2 left-2 right-2 bottom-2 border-4 border-transparent border-t-purple-500 rounded-full animate-spin-reverse"></div>
           
           {/* Center Dot */}
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>

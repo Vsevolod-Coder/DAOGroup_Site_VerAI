@@ -183,6 +183,7 @@ function Footer() {
         </div>
 
         {/* Newsletter Section */}
+        {/*
         <div className="mb-12 p-6 bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-2xl border border-slate-600/30">
           <div className="text-center space-y-4">
             <h3 className="text-xl font-semibold text-white">Будьте в курсе новостей</h3>
@@ -195,12 +196,13 @@ function Footer() {
                 placeholder="Ваш email"
                 className="flex-1 px-4 py-2 bg-slate-900/50 border border-slate-600/50 rounded-lg text-white placeholder-slate-400 focus:outline-none focus:border-blue-400 transition-colors duration-300"
               />
-              <button className="px-6 py-2 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-lg hover:from-blue-600 hover:to-purple-600 transition-all duration-300 hover:scale-105 font-medium">
+              <button className="btn btn-primary hover:scale-105 font-medium">
                 Подписаться
               </button>
             </div>
           </div>
         </div>
+        */}
 
         {/* Bottom Footer */}
         <div className="pt-8 border-t border-slate-700/50">

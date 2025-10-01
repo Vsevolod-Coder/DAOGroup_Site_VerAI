@@ -120,7 +120,7 @@ function Contact() {
               ></textarea>
             </div>
             
-            <button type="submit" className="btn">Отправить</button>
+            <button type="submit" className="btn btn-primary w-full">Отправить</button>
           </form>
         </div>
       </div>

@@ -225,7 +225,7 @@ function Testimonials() {
             </p>
             <a 
               href="/contact" 
-              className="btn-primary bg-white text-blue-600 hover:bg-blue-50 inline-flex items-center gap-2 group font-semibold px-8 py-4 rounded-full transition-all duration-300"
+              className="btn-primary inline-flex items-center gap-2 group font-semibold px-8 py-4 rounded-full transition-all duration-300"
             >
               Начать проект
               <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">

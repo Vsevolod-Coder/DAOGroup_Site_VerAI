@@ -59,7 +59,7 @@ function ContactPage() {
     {
       icon: FaMapMarkerAlt,
       title: "Адрес",
-      value: "г. Бишкек, ул. Примерная, 123",
+      value: "г. Бишкек, ул. Чуй 147, офис 1",
       description: "Офис открыт для посещений",
       color: "from-purple-500 to-pink-600"
     },
@@ -105,7 +105,7 @@ function ContactPage() {
     { day: "Среда", hours: "9:00 - 18:00" },
     { day: "Четверг", hours: "9:00 - 18:00" },
     { day: "Пятница", hours: "9:00 - 18:00" },
-    { day: "Суббота", hours: "По договоренности" },
+    { day: "Суббота", hours: "Выходной" },
     { day: "Воскресенье", hours: "Выходной" }
   ];
 
@@ -372,13 +372,18 @@ function ContactPage() {
               </div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Офис DAOGroup</h3>
               <p className="text-lg text-gray-600 mb-6">
-                г. Бишкек, ул. Примерная, 123<br />
-                Бизнес-центр "Технопарк", 5 этаж
+                г. Бишкек, ул. Чуй 147, офис 1
               </p>
               <div className="bg-gray-100 rounded-lg p-8 mb-6">
-                <p className="text-gray-600 italic">
-                  Здесь будет интерактивная карта с местоположением офиса
-                </p>
+                <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d891.052538512203!2d74.61789265157658!3d42.87605477771822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7b8b642eafb%3A0xe3d33328f905633f!2zMTQ3INC_0YDQvtGB0L8uINCn0YPQuSwg0JHQuNGI0LrQtdC6!5e0!3m2!1sru!2skg!4v1759121407702!5m2!1sru!2skg"
+                  width="100%" 
+                  height="350" 
+                  style={{ border: 0 }} 
+                  allowFullScreen="" 
+                  loading="eager"
+                  title="DAOGroup на карте"
+                ></iframe>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a

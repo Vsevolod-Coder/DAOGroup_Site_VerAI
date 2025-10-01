@@ -27,10 +27,10 @@ function Header() {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
       scrolled 
         ? 'bg-white/95 backdrop-blur-lg shadow-lg border-b border-gray-100' 
-        : 'bg-transparent'
+        : 'bg-white/90 backdrop-blur-sm'
     }`}>
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between py-4">
@@ -41,9 +41,7 @@ function Header() {
                 <img 
                   src={logo} 
                   alt="DAO Group Logo" 
-                  className={`h-10 w-auto transition-all duration-300 ${
-                    scrolled ? 'brightness-100' : 'brightness-0'
-                  }`}
+                  className="h-10 w-auto transition-all duration-300 opacity-100"
                 />
               </div>
             </Link>
@@ -58,12 +56,8 @@ function Header() {
                 className={({ isActive }) => `
                   relative px-4 py-2 rounded-full font-medium transition-all duration-300 group
                   ${isActive 
-                    ? scrolled 
-                      ? 'text-blue-600 bg-blue-50' 
-                      : 'text-white bg-white/20'
-                    : scrolled 
-                      ? 'text-gray-700 hover:text-blue-600 hover:bg-gray-50' 
-                      : 'text-white/80 hover:text-white hover:bg-white/10'
+                    ? 'text-blue-600 bg-blue-50' 
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-gray-50'
                   }
                 `}
               >
@@ -81,11 +75,7 @@ function Header() {
             <div className="ml-4">
               <Link
                 to="/contact"
-                className={`btn-primary inline-flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 group ${
-                  scrolled 
-                    ? 'bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-lg hover:scale-105' 
-                    : 'bg-white text-blue-600 hover:bg-blue-50 hover:shadow-lg hover:scale-105'
-                }`}
+                className="btn-primary inline-flex items-center space-x-2 px-6 py-3 rounded-full font-semibold transition-all duration-300 group bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:shadow-lg hover:scale-105"
               >
                 <span>Начать проект</span>
                 <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -97,29 +87,21 @@ function Header() {
           
           {/* Mobile Menu Button */}
           <button 
-            className={`md:hidden relative w-10 h-10 rounded-lg transition-all duration-300 ${
-              scrolled ? 'bg-gray-100 hover:bg-gray-200' : 'bg-white/10 hover:bg-white/20'
-            }`}
+            className="md:hidden relative w-10 h-10 rounded-lg transition-all duration-300 bg-gray-100 hover:bg-gray-200"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle mobile menu"
           >
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="relative w-6 h-6">
-                <span className={`absolute block w-6 h-0.5 transition-all duration-300 ${
-                  scrolled ? 'bg-gray-700' : 'bg-white'
-                } ${
-                  mobileMenuOpen ? 'rotate-45 top-3' : 'top-1'
-                }`}></span>
-                <span className={`absolute block w-6 h-0.5 top-3 transition-all duration-300 ${
-                  scrolled ? 'bg-gray-700' : 'bg-white'
-                } ${
+                <span className="absolute block w-6 h-0.5 transition-all duration-300 bg-gray-700 ${
+                  mobileMenuOpen ? 'rotate-45 top-3' : 'top-2'
+                }"></span>
+                <span className="absolute block w-6 h-0.5 top-3 transition-all duration-300 bg-gray-700 ${
                   mobileMenuOpen ? 'opacity-0' : 'opacity-100'
-                }`}></span>
-                <span className={`absolute block w-6 h-0.5 transition-all duration-300 ${
-                  scrolled ? 'bg-gray-700' : 'bg-white'
-                } ${
+                }"></span>
+                <span className="absolute block w-6 h-0.5 transition-all duration-300 bg-gray-700 ${
                   mobileMenuOpen ? '-rotate-45 top-3' : 'top-5'
-                }`}></span>
+                }"></span>
               </div>
             </div>
           </button>
